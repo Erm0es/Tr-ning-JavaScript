@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(./pictures/Railway_Background-1522.jpg);
+    background-size:cover;
+    background-repeat: space;
+    background-position: center;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 5rem;
+    padding: 2rem;
+}
+
+h1, 
+h2{
+    background: rgba(186, 179, 163, 0.5);
+}
+
+h2{
+    font-size: 5rem;
+    padding: 4rem;
+}
