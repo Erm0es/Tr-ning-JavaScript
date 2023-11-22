@@ -13,8 +13,12 @@ body{
     font-size: 2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    margin: 5rem;
+    margin: 3rem;
     padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
 }
 
 h1, 
@@ -28,8 +32,8 @@ h2{
 }
 
 button{
-    margin: 5rem;
-    padding: 1rem;
+    display: inline-block;
+    width: 200px;
     background: rgba(95, 1, 1, 0.7);
     border: ridge rgb(105, 67, 67);
     color: white;
@@ -37,9 +41,12 @@ button{
     font-weight: 700;
     cursor: pointer;
     transition: all 0.4s ease;
+    margin:2rem;
+    padding: 1rem;
 }
 
 button:hover{
     background: rgba(59, 1, 1, 0.7);
     text-shadow: 0 0 7px rgb(0, 0, 0);   
 }
+
