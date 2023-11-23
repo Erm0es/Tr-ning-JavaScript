@@ -34,22 +34,28 @@ p{
     color:rgb(243, 222, 179);
 }
 
-#startgame-btn{
-    width: 250px;
+#button-div{
+    margin: auto;
+    padding: 10px 24px;
+    display: block;
+    width: 50%;
+    padding: 10px;
+}
 
+button{
+    width: 250px;
     font-size: 1.5rem;
     font-weight:800;
     padding: 0.5rem;
-    margin: 4rem;
+    margin: 1rem;
     color:rgb(0, 64, 0);
     background-image: linear-gradient(160deg, rgb(122, 91, 6), rgb(246, 205, 103), #fef1a2,rgb(246, 205, 103),rgb(122, 91, 6));
     box-shadow:0 1px 10px 1px rgb(122, 91, 6);
     text-align: center;
     border-style: none;
-   
 }
 
-#startgame-btn:hover{
+button:hover{
     transition: all 1s ease;
     box-shadow:0 1px 30px 1px rgb(246, 205, 103);
     cursor: pointer;
