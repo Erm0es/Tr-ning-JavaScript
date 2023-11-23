@@ -1,10 +1,10 @@
+let min = 1
+let max = 7
 
-let age = 101;
-
-if(age < 100){
-    console.log("to young")
-}else if (age === 100 ){
-    console.log("BIRTHDAYCARD FROM KING")
-}else{
-    console.log("you already got ur card")
+function randomNumber(){
+ let r = Math.floor(Math.random() * (max - min) + min)
+ return r
 }
+
+r = randomNumber();
+console.log(r)
