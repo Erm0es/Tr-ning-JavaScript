@@ -1,35 +1,45 @@
+//let startGameBtn = document.getElementById("startGame-btn");
+let messageEl = document.getElementById("message-el");
+let sumEL = document.getElementById("sum-el");
+let cardEl = document.getElementById("card-el");
 
-let min;
-let max;
 
-function randomNum(min,max){
-    return Math.floor(Math.random() * (max - min) + min)
-}
-
-let firstCard = randomNum(2,11);
-let secondCard = randomNum(2,11);
+let firstCard = randomNum(2, 11);
+let secondCard = randomNum(2, 11);
 let sum = firstCard + secondCard;
 
-//let sum = 23;
+//let sum = 2;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
 
-if(sum < 21) {
-    message = "your sum is: " + sum + ". Do you want to draw a new card?";
-} else if (sum === 21){
-    message = "Your sum is: " + sum + " BLACKJACK!";
-    hasBlackJack = true;
-}else if(sum > 21){
-    message = "Your sum is: " + sum + " You lose :(";
-    isAlive = false;
-}
-else{
-    message = "Something went wrong"
+let min;
+let max;
+
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
 }
 
+function startGame() {
+    if (sum < 21) {
+        message = "Do you want to draw a new card?";
+    } else if (sum === 21) {
+        message = "BLACKJACK!";
+        hasBlackJack = true;
+    } else if (sum > 21) {
+        message = "You lose.";
+        isAlive = false;
+    }
+    else {
+        message = "Something went wrong"
+    }
+    messageEl.innerHTML = message;
+    cardEl.innerHTML = "Cards: " + firstCard + ", " + secondCard;
+    sumEL.innerHTML = "Sum: "+ sum;
+}
 
-console.log(hasBlackJack)
-console.log(isAlive)
-console.log(message)
+function newCard(){
+    console.log("RENDERING CARD");
+}
+
 

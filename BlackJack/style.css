@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ min-height: 50rem;
+ background-image: radial-gradient(rgb(4, 82, 4),rgb(7, 61, 7),rgb(0, 37, 0),rgb(6, 24, 1));
+ background-repeat: no-repeat;
+ background-size: cover;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+h1{
+    font-size: 8rem;
+    margin: 20px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #fef1a2,rgb(246, 205, 103),rgb(122, 91, 6), #fef1a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    color: rgb(166, 127, 20);
+}
+
+#message-el{
+    color:rgb(243, 222, 179);
+}
+
+#startgame-btn{
+    width: 250px;
+
+    font-size: 1.5rem;
+    font-weight:800;
+    padding: 0.5rem;
+    margin: 4rem;
+    color:rgb(0, 64, 0);
+    background-image: linear-gradient(160deg, rgb(122, 91, 6), rgb(246, 205, 103), #fef1a2,rgb(246, 205, 103),rgb(122, 91, 6));
+    box-shadow:0 1px 10px 1px rgb(122, 91, 6);
+    text-align: center;
+    border-style: none;
+   
+}
+
+#startgame-btn:hover{
+    transition: all 1s ease;
+    box-shadow:0 1px 30px 1px rgb(246, 205, 103);
+    cursor: pointer;
+}
