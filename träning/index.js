@@ -9,3 +9,12 @@ let course = {
 }
 
 console.log(course.isFree);
+
+let castle = {
+    title: "Live in this castle!",
+    rooms: 1,
+    singleBed: false,
+    tags:["breakfast", "bath","roomservice"]
+}
+
+console.log(castle.title)
