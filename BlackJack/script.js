@@ -20,7 +20,7 @@ function randomCard(cards) {
     let random = Math.floor(Math.random() * 13) + 1;
     if(random === 1){
         cards= 11;
-    } else if(random === 11 || random === 12 || random === 13){
+    } else if(random > 10){
         cards = 10;
     }else{
         cards = random; 
@@ -33,7 +33,7 @@ function renderGame() {
     for (let i = 0; i < cards.length; i++) {
         cardEl.innerHTML += cards[i] + ", ";
     }
-    
+
     sumEL.innerHTML = "Sum: " + sum;
     if (sum < 21) {
         message = "Do you want to draw a new card?";
