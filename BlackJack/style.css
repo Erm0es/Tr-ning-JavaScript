@@ -46,6 +46,7 @@ p{
 }
 
 button{
+    display: inline-block;
     width: 250px;
     font-size: 1.5rem;
     font-weight:800;
