@@ -3,27 +3,31 @@ let messageEl = document.getElementById("message-el");
 let sumEL = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 
-let firstCard = randomCard()
-let secondCard = randomCard();
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
-//let sum = 2;
+let cards = [];
+let sum = 0;
+
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message = "";
 
 function startGame() {
+    let firstCard = randomCard()
+    let secondCard = randomCard();
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
+    isAlive = true;
     renderGame()
+    return cards,sum,isAlive;
 }
 
 function randomCard(cards) {
     let random = Math.floor(Math.random() * 13) + 1;
-    if(random === 1){
-        cards= 11;
-    } else if(random > 10){
+    if (random === 1) {
+        cards = 11;
+    } else if (random > 10) {
         cards = 10;
-    }else{
-        cards = random; 
+    } else {
+        cards = random;
     }
     return random
 }
