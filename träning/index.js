@@ -1,10 +1,11 @@
-let min = 1
-let max = 7
-
-function randomNumber(){
- let r = Math.floor(Math.random() * (max - min) + min)
- return r
+let course = {
+    title:"learn CSS Grid for free",
+    lessons:16,
+    creator: "Per Harald Borgen",
+    length: 63,
+    level: 2,
+    isFree: true,
+    tags: ["html","css"]
 }
 
-r = randomNumber();
-console.log(r)
+console.log(course.isFree);

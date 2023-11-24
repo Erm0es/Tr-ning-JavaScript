@@ -1,8 +1,8 @@
-//let startGameBtn = document.getElementById("startGame-btn");
 let messageEl = document.getElementById("message-el");
 let sumEL = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 let newCardBtn = document.getElementById("new-card-btn");
+let playerEl = document.getElementById("player-el");
 
 let cards = [];
 let sum = 0;
@@ -10,6 +10,13 @@ let sum = 0;
 let hasBlackJack = false;
 let isAlive = false;
 let message = "";
+
+let player = {
+    name:"Emelie",
+    chips: 312
+};
+
+playerEl.innerHTML = player.name + ": $" + player.chips;
 
 function startGame() {
     let firstCard = randomCard()
