@@ -1,20 +1,11 @@
-let course = {
-    title:"learn CSS Grid for free",
-    lessons:16,
-    creator: "Per Harald Borgen",
-    length: 63,
-    level: 2,
-    isFree: true,
-    tags: ["html","css"]
+let person = {
+    name: "Emelie",
+    age: 28,
+    country: "Sweden"
 }
 
-console.log(course.isFree);
-
-let castle = {
-    title: "Live in this castle!",
-    rooms: 1,
-    singleBed: false,
-    tags:["breakfast", "bath","roomservice"]
+function logData(){
+   console.log(person.name + " is " + person.age + " years old and lives in " + person.country);
 }
 
-console.log(castle.title)
+logData()
