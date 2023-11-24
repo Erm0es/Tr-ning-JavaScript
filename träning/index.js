@@ -1,13 +1,8 @@
-let largeCountries = ["Tuvalu", "India", "USA","Indonesia","Monaco"]
+let snus = ["Daquiri", "Licorice fusion", "Spearmint"]
 
-//tuvalu and monaco is wrong
-//China first
-//Pakistan last
+function getRandomSnus() {
+    let random = Math.floor(Math.random()* snus.length)
+    return snus[random]
+}
 
-largeCountries.pop()
-largeCountries.push("Pakistan")
-largeCountries.shift(0)
-largeCountries.unshift("China")
-
-
-console.log(largeCountries);
+console.log(getRandomSnus())
