@@ -5,7 +5,7 @@
 }
 
 body{
- min-height: 50rem;
+ min-height:65rem;
  background-image: radial-gradient(rgb(4, 82, 4),rgb(7, 61, 7),rgb(0, 37, 0),rgb(6, 24, 1));
  background-repeat: no-repeat;
  background-size: cover;
@@ -63,4 +63,8 @@ button:hover{
     transition: all 1s ease;
     box-shadow:0 1px 30px 1px rgb(246, 205, 103);
     cursor: pointer;
+}
+
+#startgame-btn{
+    margin-top: 5rem;
 }

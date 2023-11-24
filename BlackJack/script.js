@@ -12,9 +12,9 @@ let isAlive = false;
 let message = "";
 
 let player = {
-    name:"Emelie",
-    chips: 312
-};
+    name: "Emelie",
+    chips: 245
+}
 
 playerEl.innerHTML = player.name + ": $" + player.chips;
 
