@@ -3,14 +3,20 @@ const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 
 
-let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"];
+let myLeads = [];
 
 
 inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value);
-    //console.log(myLeads)
+    renderLeads();
 });
 
+
+function renderLeads(){
+let listItems = "";
 for(let i = 0; i < myLeads.length; i++){
-    ulEl.innerHTML += "<i>"+ myLeads[i]+"</i>"
+    listItems += "<i>"+ myLeads[i]+"</i>"
+}
+
+ulEl.innerHTML = listItems;
 }
