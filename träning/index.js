@@ -1,8 +1,7 @@
-let snus = ["Daquiri", "Licorice fusion", "Spearmint"]
+const container = document.getElementById("container-el");
 
-function getRandomSnus() {
-    let random = Math.floor(Math.random()* snus.length)
-    return snus[random]
-}
+container.innerHTML += "<button onclick='buy()'>Buy!</button>";
 
-console.log(getRandomSnus())
+function buy(){
+    container.innerHTML += "<p>Thank you for buying</p>"
+};
