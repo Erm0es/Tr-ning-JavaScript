@@ -1,19 +1,31 @@
-const container = document.getElementById("container-el");
+// The generateSentence(desc, arr) takes two parameterer: a description and an array.
+// It should return a string based upon the description and array.
 
-container.innerHTML += "<button onclick='buy()'>Buy!</button>";
+// Example 1: if you pass in "largest countries",and ["China", "India", "USA"],
+// it should return the string: "The 3 largest countries are China, India, USA"
 
-function buy(){
-    container.innerHTML += "<p>Thank you for buying</p>"
-};
+// Example 2:If you pass in "best fruits" and ["Apples", "Bananas"], it should return:
+// "The 2 best fruits are Apples, Bananas"
+
+// Use both a for loop and a template string to solve the challenge
 
 
-const recipient = "James"
-const sender = "Emelie"
+function generateSentence(desc, arr) {
+    let baseString = `The ${arr.length} ${desc} are: `
 
-//const email = "Hey " + recipient + "! How is it going? Cheers Per"
-const email = `
-"Hey "${recipient }"! 
-How is it going? 
-Cheers ${sender}"`
+    const lastIndex = arr.length - 1
 
-console.log(email)
+    for(let i = 0; i < arr.length; i++){
+        if(i === lastIndex){
+            baseString += arr[i]
+        }else{
+            baseString += arr[i] + ", "
+        }
+       
+
+    }  
+    return baseString;
+}
+
+const sentence = generateSentence("highest mountains", ["Mount Everest", "K2"])
+console.log(sentence)
