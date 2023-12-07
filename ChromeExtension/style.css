@@ -4,9 +4,11 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+
 body {
   min-width: 400px;
 }
+
 #input-el {
   width: 100%;
   padding-left: 10px;
@@ -14,7 +16,8 @@ body {
   border: 2px #5f9341 solid;
 }
 
-#input-btn {
+#input-btn,
+#tab-btn {
   margin-top: 4px;
   margin-bottom: 1rem;
   font-weight: bold;
@@ -25,11 +28,11 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
-#input-btn:hover{
-    background-color: #406928;
 
+#input-btn:hover,
+#tab-btn:hover {
+  background-color: #406928;
 }
-
 
 #delete-btn {
   margin-top: 4px;
@@ -43,7 +46,7 @@ body {
   cursor: pointer;
 }
 #delete-btn:hover {
-    background-color: rgb(229, 227, 227);
+  background-color: rgb(229, 227, 227);
 }
 
 ul,
