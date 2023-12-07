@@ -13,15 +13,12 @@ if (leadsFromLocalStorage) {
 }
 
 tabBtn.addEventListener("click", () => {
-
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         myLeads.push(tabs[0].url)
         localStorage.setItem("myLeads", JSON.stringify(myLeads));
         render(myLeads);
     });
-    console.log(tabs[0].url)
 })
-
 
 function render(leads) {
     let listItems = "";
